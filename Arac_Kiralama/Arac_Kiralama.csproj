@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF195EFB-BE41-4BDF-B17D-A9F3E23D59CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Arac_Kiralama</RootNamespace>
+    <AssemblyName>Arac_Kiralama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminG.Designer.cs">
+      <DependentUpon>AdminG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALis.Designer.cs">
+      <DependentUpon>ALis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracEkle.Designer.cs">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Araclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Araclar.Designer.cs">
+      <DependentUpon>Araclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KAnasayfa.Designer.cs">
+      <DependentUpon>KAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıt.Designer.cs">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KG.Designer.cs">
+      <DependentUpon>KG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kiralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiralama.Designer.cs">
+      <DependentUpon>Kiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kİslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kİslem.Designer.cs">
+      <DependentUpon>Kİslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView1.cs" />
+    <Compile Include="MListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MListe.Designer.cs">
+      <DependentUpon>MListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüsteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüsteriEkle.Designer.cs">
+      <DependentUpon>MüsteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiBilgi.Designer.cs">
+      <DependentUpon>KiBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminG.resx">
+      <DependentUpon>AdminG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALis.resx">
+      <DependentUpon>ALis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracEkle.resx">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Araclar.resx">
+      <DependentUpon>Araclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KAnasayfa.resx">
+      <DependentUpon>KAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıt.resx">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KG.resx">
+      <DependentUpon>KG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kiralama.resx">
+      <DependentUpon>Kiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kİslem.resx">
+      <DependentUpon>Kİslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MListe.resx">
+      <DependentUpon>MListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüsteriEkle.resx">
+      <DependentUpon>MüsteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiBilgi.resx">
+      <DependentUpon>KiBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E2TgCyLXsAA5pXz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0x0-2021-model-arabalar-turkiyeye-ne-zaman-gelecek-2021de-cikacak-suv-modelleri-1609741374570.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda_Civic_Sedan-02-1280x720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmw-5665352__340.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3dduvarkagitlari-f54d947c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1453799553543.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filo-arac-kiralama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20120623124636-68f8310b-me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\886577.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ac8fcb571095930885816134f1a9823b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\788bea024d7b8ed7d6ad5eec7e2e59d1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old-black-wall-background-texture-600w-504932662.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-shihabsha-zin-407615.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scion-scion-fr-s-scion-iq-scion-tc-scion-xd-scion-xb-car-vehicle-simple-background-dual-monitors-multiple-display-reflection-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikinci-el-araba-fiyatlari-dustu-hepsi-100-bin-lir-4936963 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\207-2071044_new-customers-new-customer-icon-png-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\650x344-alman-araba-markalari-alman-araba-otomobil-modelleri-siralamasi-ve-listesi-1597331062493.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20120708125408-6df43715-me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c879475efb4a815d7a90bb936b187579.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\892590bda5c7da8f8eaf8a80717371c4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-arrows-black-wooden-background-arrows-patterns-background-with-arrows-right-arrows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmw-5665352__3401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a36a4101fb9462c6100b70a28a19c532.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duvar-resimleri-beyaz-arka-plan-geometrik-doku.jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11494050811pb9htw8ju6kbph29kcf5ahqymajkha3rppqc1nywpekzorolbdideigjvor3t1yq6sjpzlcg7ee5erhtbpwjuzfftrgwehddr79k.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duvar-resimleri-beyaz-arka-plan-geometrik-doku.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
